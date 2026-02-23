@@ -1,0 +1,258 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "af36babd5296325ac9e9",
+  "position": {
+    "x": 0,
+    "y": 456.69466925546436,
+    "z": 0,
+    "height": 262.9931371229743,
+    "width": 1280.3198831196294,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Salesperson"
+                    }
+                  },
+                  "Property": "Employee"
+                }
+              },
+              "queryRef": "Salesperson.Employee",
+              "nativeQueryRef": "Employee",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "City"
+                        }
+                      },
+                      "Hierarchy": "Sales Region"
+                    }
+                  },
+                  "Level": "Region"
+                }
+              },
+              "queryRef": "City.Sales Region.Region",
+              "nativeQueryRef": "Sales Region Region",
+              "active": true
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "City"
+                        }
+                      },
+                      "Hierarchy": "Sales Region"
+                    }
+                  },
+                  "Level": "Subregion"
+                }
+              },
+              "queryRef": "City.Sales Region.Subregion",
+              "nativeQueryRef": "Sales Region Subregion",
+              "active": true
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "City"
+                        }
+                      },
+                      "Hierarchy": "Sales Region"
+                    }
+                  },
+                  "Level": "Sales Territory"
+                }
+              },
+              "queryRef": "City.Sales Region.Sales Territory",
+              "nativeQueryRef": "Sales Region Sales Territory",
+              "active": true
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "City"
+                        }
+                      },
+                      "Hierarchy": "Sales Region"
+                    }
+                  },
+                  "Level": "State Province"
+                }
+              },
+              "queryRef": "City.Sales Region.State Province",
+              "nativeQueryRef": "Sales Region State Province",
+              "active": true
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "City"
+                        }
+                      },
+                      "Hierarchy": "Sales Region"
+                    }
+                  },
+                  "Level": "City"
+                }
+              },
+              "queryRef": "City.Sales Region.City",
+              "nativeQueryRef": "Sales Region City",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures"
+                    }
+                  },
+                  "Property": "% Black Items"
+                }
+              },
+              "queryRef": "Measures.% Black Items",
+              "nativeQueryRef": "% Black Items"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measures"
+                    }
+                  },
+                  "Property": "% Blue Items"
+                }
+              },
+              "queryRef": "Measures.% Blue Items",
+              "nativeQueryRef": "% Blue Items"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Measures"
+                  }
+                },
+                "Property": "% Black Items"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "City.Sales Region.Region"
+            ],
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "City"
+                    }
+                  },
+                  "Property": "Region"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "City.Sales Region.Subregion"
+            ],
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "City"
+                    }
+                  },
+                  "Property": "Subregion"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "City.Sales Region.Sales Territory"
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "City.Sales Region.State Province"
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "City.Sales Region.City"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "drillFilterOtherVisuals": true
+  }
+}

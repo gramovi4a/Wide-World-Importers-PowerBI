@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "WideWorldImporters-MD"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "87a6f15b-ec54-4c2a-bd67-cb4ecb4223d2"
+  }
+}
