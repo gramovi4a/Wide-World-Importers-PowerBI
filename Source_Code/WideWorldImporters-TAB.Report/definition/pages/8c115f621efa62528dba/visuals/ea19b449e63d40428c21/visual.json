@@ -1,0 +1,194 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "ea19b449e63d40428c21",
+  "position": {
+    "x": 0,
+    "y": 214.44444444444443,
+    "z": 1000,
+    "height": 106.66666666666666,
+    "width": 1003.3333333333333,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Date"
+                    }
+                  },
+                  "Property": "Calendar Year Label"
+                }
+              },
+              "queryRef": "Date.Calendar Year Label",
+              "nativeQueryRef": "Calendar Year Label",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sales"
+                    }
+                  },
+                  "Property": "Total Sales"
+                }
+              },
+              "queryRef": "Sales.Total Sales",
+              "nativeQueryRef": "Total Sales"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sales"
+                    }
+                  },
+                  "Property": "Total Sales LY"
+                }
+              },
+              "queryRef": "Sales.Total Sales LY",
+              "nativeQueryRef": "Total Sales LY",
+              "format": "#,0.00 \"kr.\";-#,0.00 \"kr.\";#,0.00 \"kr.\""
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sales"
+                    }
+                  },
+                  "Property": "Total Sales YOY %"
+                }
+              },
+              "queryRef": "Sales.Total Sales YOY %",
+              "nativeQueryRef": "Total Sales YOY %",
+              "format": "0.00 %;-0.00 %;0.00 %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sales"
+                    }
+                  },
+                  "Property": "Total Sales YOY Absolute Change"
+                }
+              },
+              "queryRef": "Sales.Total Sales YOY Absolute Change",
+              "nativeQueryRef": "Total Sales YOY Absolute Change",
+              "format": "#,0.00 \"kr.\";-#,0.00 \"kr.\";#,0.00 \"kr.\""
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Sales"
+                  }
+                },
+                "Property": "Total Sales YOY %"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Sales.Total Sales YOY %"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "189.0301444702743D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sales.Total Sales"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "211.39023893792591D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sales.Total Sales LY"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "118.75D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sales.Total Sales YOY %"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "177.11111386205891D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Date.Calendar Year Label"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

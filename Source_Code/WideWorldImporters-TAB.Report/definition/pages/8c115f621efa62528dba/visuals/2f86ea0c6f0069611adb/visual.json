@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "2f86ea0c6f0069611adb",
+  "position": {
+    "x": 617.77777777777771,
+    "y": 321.11111111111109,
+    "z": 3000,
+    "height": 387.77777777777777,
+    "width": 317.77777777777777,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "waterfallChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Date"
+                    }
+                  },
+                  "Property": "Calendar Year Label"
+                }
+              },
+              "queryRef": "Date.Calendar Year Label",
+              "nativeQueryRef": "Calendar Year Label",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Sales"
+                    }
+                  },
+                  "Property": "Total Sales YOY Absolute Change"
+                }
+              },
+              "queryRef": "Sales.Total Sales YOY Absolute Change",
+              "nativeQueryRef": "Total Sales YOY Absolute Change"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Sales"
+                  }
+                },
+                "Property": "Total Sales YOY Absolute Change"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

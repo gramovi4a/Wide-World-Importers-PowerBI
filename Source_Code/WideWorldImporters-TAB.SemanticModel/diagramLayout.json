@@ -1,0 +1,190 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 184.90450461679956,
+        "y": 140.93331472388948
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 762.31951036194323,
+            "y": -28.053083994810322
+          },
+          "nodeIndex": "City",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 403.38021325467008,
+            "y": 623.825159710109
+          },
+          "nodeIndex": "Customer",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 690.316270354155,
+            "y": 325.56703941881585
+          },
+          "nodeIndex": "Date",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 14
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": -50
+          },
+          "nodeIndex": "Invoice",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 50.122535515089794,
+            "y": 325.72376499254267
+          },
+          "nodeIndex": "Invoice Sales",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 470.62399982857528,
+            "y": 1013.1232885102154
+          },
+          "nodeIndex": "Item",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1216.7957955803972,
+            "y": 941.79164836411235
+          },
+          "nodeIndex": "Item-Current",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 929.73957056572772,
+            "y": 679.22640922637265
+          },
+          "nodeIndex": "Sales",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 117.20313003038734,
+            "y": 679.39328830515115
+          },
+          "nodeIndex": "Salesperson",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1548.4571385624854,
+            "y": 617.56164425510769
+          },
+          "nodeIndex": "Annual Calcs",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1832.4571385624854,
+            "y": 593.56164425510769
+          },
+          "nodeIndex": "Brand Color Sales by Buying Group",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1314.4571385624854,
+            "y": 588.04198463279749
+          },
+          "nodeIndex": "Delivery Date",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 2116.4571385624854,
+            "y": 605.56164425510769
+          },
+          "nodeIndex": "Item Brand Color",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 337.036414693135,
+            "y": 69.750488642874643
+          },
+          "nodeIndex": "Tailspin Toys Sales",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 13
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 70.955543900968848,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

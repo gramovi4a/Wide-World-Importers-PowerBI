@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/reportExtension/1.0.0/schema.json",
+  "name": "extension",
+  "entities": [
+    {
+      "name": "Sales",
+      "measures": [
+        {
+          "name": "Total Quantity",
+          "dataType": "Integer",
+          "expression": "SUM(Sales[Quantity])",
+          "formatString": "0"
+        },
+        {
+          "name": "YOY Target %",
+          "dataType": "Double",
+          "expression": "0.05",
+          "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %"
+        }
+      ]
+    },
+    {
+      "name": "Annual Calcs",
+      "measures": [
+        {
+          "name": "Total Sales average per Size",
+          "dataType": "Double",
+          "expression": "\nAVERAGEX(KEEPFILTERS(VALUES('Item'[Size])), CALCULATE([Total Sales]))",
+          "formatString": "General Number",
+          "measureTemplate": {
+            "daxTemplateName": "AveragePerCategory",
+            "version": 0
+          }
+        }
+      ]
+    }
+  ]
+}
